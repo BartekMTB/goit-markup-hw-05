@@ -56,14 +56,13 @@ header a {
 
 header div > a {
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-grey);
 }
 
-header span svg {
+header svg {
   width: 16px;
   height: 16px;
   padding: 0;
@@ -76,19 +75,22 @@ header span svg {
   fill: var(--brand-grey);
 }
 
-/* header svg:hover {
-  fill: var(--brand-blue);
-} */
+.flex-head-contacts {
+  display: flex;
+}
 
 .flex-head-icons {
   display: flex;
+}
+
+.flex-head-icons:hover svg {
+  fill: var(--brand-blue);
 }
 
 header a:hover,
 header a:focus,
 .a-current {
   color: var(--brand-blue);
-  fill: var(--brand-blue);
 }
 
 header {
