@@ -35,7 +35,7 @@ ul {
 }
 
 header nav {
-  margin-right: 371px;
+  margin-right: auto;
 }
 
 header nav a {
@@ -56,11 +56,35 @@ header a {
 
 header div > a {
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-grey);
+}
+
+header svg {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin-right: 10px;
+  display: block;
+  /*   stroke-width: 0; */
+  align-self: center;
+  /* 
+  stroke: var(--brand-grey); */
+  fill: var(--brand-grey);
+}
+
+.flex-head-contacts {
+  display: flex;
+}
+
+.flex-head-icons {
+  display: flex;
+}
+
+.flex-head-icons:hover svg {
+  fill: var(--brand-blue);
 }
 
 header a:hover,
@@ -136,6 +160,15 @@ body {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+.ourperks-icons {
+  padding: 25px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  fill: var(--brand-grey2);
 }
 
 .ourperks li {
