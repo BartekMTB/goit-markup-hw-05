@@ -13,21 +13,62 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.logo {
-  font-family: "Raleway";
 
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background: var(--brand-white);
+  letter-spacing: 0.03em;
+  /* font-weight: 400; */
 
-  color: var(--brand-blue);
-  margin: 24px 93px 25px 15px;
+  color: var(--brand-grey2);
+  /* line-height: 0.15; /* podciaga ramki pod zdjecia */
+}
+
+/* Reset tagów */
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 0;
-  margin: 0 0 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+button {
+  border: none;
+}
+
+/* Koniec reset tagów */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--brand-blue);
+  margin-right: 93px;
 }
 
 .logo-black {
@@ -40,10 +81,10 @@ header nav {
 
 header nav a {
   font-weight: 500;
-
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  padding: 32px 0;
+  display: block;
 }
 
 header nav ul li:not(:last-child) {
@@ -58,7 +99,7 @@ header div > a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
+
   color: var(--brand-grey);
 }
 
@@ -73,6 +114,11 @@ header svg {
   /* 
   stroke: var(--brand-grey); */
   fill: var(--brand-grey);
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
 }
 
 .flex-head-contacts {
@@ -102,30 +148,18 @@ header {
   margin-right: 50px;
 }
 
-body {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  background: var(--brand-white);
-  letter-spacing: 0.03em;
-  font-weight: 400;
-
-  color: var(--brand-grey2);
-  line-height: 0.15; /* podciaga ramki pod zdjecia */
-}
-
 .mainheader {
   background: var(--brand-background);
+  padding: 200px 0;
+  text-align: center;
 }
 
 .mainheader h1 {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  margin-top: 106px;
-
-  margin-left: 252px;
-  margin-right: 252px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -134,29 +168,24 @@ body {
 }
 
 .mainheader button {
-  width: 200px;
-  height: 50px;
-  border: none;
+  min-width: 200px;
   background: var(--brand-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   margin-top: 40px;
-  margin-bottom: 116px;
   padding: 10px 41px 10px 42px;
-
   color: var(--brand-white);
   cursor: pointer;
+  letter-spacing: 0.06em;
 }
 
 .ourperks h3 {
   font-weight: 700;
-
   line-height: 1.14;
-
+  font-size: 14px;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -176,9 +205,12 @@ body {
 }
 .ourperks p {
   line-height: 1.71;
-  margin-top: 0px;
-  margin-bottom: 0px;
   color: var(--brand-grey);
+}
+
+.flex-ourperks {
+  display: flex;
+  gap: 30px;
 }
 
 .aboutus {
@@ -190,8 +222,13 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.flex-aboutus,
+.flex-ourteam {
+  display: flex;
+  gap: 30px;
 }
 
 .ourteam {
@@ -204,14 +241,17 @@ body {
   line-height: 1.16;
   text-align: center;
 
-  margin-top: 0px;
   margin-bottom: 50px;
 }
+
+.ourteam-wrap {
+  padding: 30px 0;
+}
+
 .ourteam h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -219,13 +259,10 @@ body {
 .ourteam p {
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 0px;
-  margin-bottom: 30px;
-
   text-align: center;
-
   color: var(--brand-grey);
 }
+
 .ourteam li {
   background-color: var(--brand-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -233,6 +270,17 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.flex-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+}
 .portfolio-buttons {
   margin-bottom: 50px;
 }
@@ -248,7 +296,7 @@ body {
   padding-right: 22px;
   background: var(--button-white);
   border-radius: 4px;
-  border-style: hidden;
+
   color: var(--brand-grey2);
   cursor: pointer;
 }
@@ -259,21 +307,18 @@ body {
   color: var(--brand-white);
 }
 
-.portfolio-contents h4 {
+.portfolio-contents h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
 }
 
 .portfolio-contents p {
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 188% */
 
   color: var(--brand-grey);
-  margin: 0px 24px 20px;
 }
 
 .portfolio-contents li {
@@ -281,6 +326,7 @@ body {
   /* border: 1px solid #eeeeee; */
 }
 .portfolioliborders {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
@@ -295,7 +341,6 @@ footer a {
   font-style: normal;
   line-height: 24px;
   /* or 171% */
-  text-decoration: none;
 
   color: var(--footer-grey);
 }
@@ -308,10 +353,6 @@ footer ul li:not(:last-child) {
 footer a:hover,
 footer a:focus {
   color: var(--brand-blue);
-}
-.address {
-  margin-top: 20px;
-  margin-left: 15px;
 }
 
 .visually-hidden {
@@ -331,39 +372,11 @@ footer a:focus {
 .container {
   width: 1200px;
   margin: 0 auto;
-  /*  text-align: center; */
+  padding: 0 15px;
 }
 
-.flex-header {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.flex-mainh {
+/* .flex-mainh {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.flex-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.flex-projects {
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px 30px;
-}
-
-.flex-aboutus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
+} */
