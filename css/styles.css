@@ -77,6 +77,11 @@ header svg {
   fill: var(--brand-grey);
 }
 
+.flex-head-icons {
+  display: flex;
+  align-items: baseline;
+}
+
 header a:hover,
 header a:focus,
 .a-current {
