@@ -68,24 +68,27 @@ header span svg {
   height: 16px;
   padding: 0;
   margin-right: 10px;
-  display: inline;
-  /* width: 1em;
-  height: 1em; */
-  stroke-width: 0;
-
-  stroke: var(--brand-grey);
+  display: block;
+  /*   stroke-width: 0; */
+  align-self: center;
+  /* 
+  stroke: var(--brand-grey); */
   fill: var(--brand-grey);
 }
 
+/* header svg:hover {
+  fill: var(--brand-blue);
+} */
+
 .flex-head-icons {
   display: flex;
-  align-items: baseline;
 }
 
 header a:hover,
 header a:focus,
 .a-current {
   color: var(--brand-blue);
+  fill: var(--brand-blue);
 }
 
 header {
