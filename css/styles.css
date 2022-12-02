@@ -64,8 +64,8 @@ header div > a {
 }
 
 header svg {
-  width: 16px;
-  height: 12px;
+  /* width: 16px;
+  height: 12px; */
   padding: 0;
   margin-right: 10px;
   display: inline;
