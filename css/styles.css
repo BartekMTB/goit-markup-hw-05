@@ -62,14 +62,15 @@ header div > a {
   text-decoration: none;
   color: var(--brand-grey);
 }
+
 header svg {
   width: 16px;
   height: 12px;
   padding: 0;
   margin-right: 10px;
   display: inline;
-  width: 1em;
-  height: 1em;
+  /* width: 1em;
+  height: 1em; */
   stroke-width: 0;
 
   stroke: var(--brand-grey);
