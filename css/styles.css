@@ -35,7 +35,7 @@ ul {
 }
 
 header nav {
-  margin-right: 371px;
+  margin-right: auto;
 }
 
 header nav a {
@@ -61,6 +61,19 @@ header div > a {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-grey);
+}
+header svg {
+  width: 16px;
+  height: 12px;
+  padding: 0;
+  margin-right: 10px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  color: #000;
+  stroke: red;
+  fill: red;
 }
 
 header a:hover,
