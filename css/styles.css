@@ -63,9 +63,9 @@ header div > a {
   color: var(--brand-grey);
 }
 
-header svg {
-  /* width: 16px;
-  height: 12px; */
+header span svg {
+  width: 16px;
+  height: 16px;
   padding: 0;
   margin-right: 10px;
   display: inline;
