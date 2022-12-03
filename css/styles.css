@@ -8,6 +8,8 @@
   --button-white: #f5f4fa;
   --footer-grey: rgba(255, 255, 255, 0.6);
   --border-grey: #ececec;
+  --gradient-mainbackground: rgba(47, 48, 58, 0.4);
+  --customer-logo: #afb1b8;
 }
 section {
   padding-top: 94px;
@@ -105,8 +107,6 @@ header div > a {
 }
 
 header svg {
-  width: 16px;
-  height: 16px;
   padding: 0;
   margin-right: 10px;
   display: block;
@@ -153,6 +153,16 @@ header {
   background: var(--brand-background);
   padding: 200px 0;
   text-align: center;
+
+  background-image: linear-gradient(
+      to bottom,
+      var(--gradient-mainbackground),
+      var(--gradient-mainbackground)
+    ),
+    url(/images/background.jpg);
+  background-size: 1600px 600px cover;
+  background-repeat: no-repeat;
+  background-position: center -125px;
 }
 
 .mainheader h1 {
@@ -164,7 +174,6 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--brand-white);
 }
 
@@ -218,7 +227,7 @@ header {
   padding-top: 0px;
 }
 
-.aboutus h2 {
+h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -236,17 +245,8 @@ header {
   background: var(--button-white);
 }
 
-.ourteam h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-
-  margin-bottom: 50px;
-}
-
 .ourteam-wrap {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 
 .ourteam h3 {
@@ -306,13 +306,16 @@ header {
 .portfolio-buttons button :focus {
   background-color: var(--brand-blue);
   color: var(--brand-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-contents h2 {
+.portfolio-contents ul h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
+  text-align: left;
 }
 
 .portfolio-contents p {
@@ -326,12 +329,85 @@ header {
   background-color: var(--brand-white);
   /* border: 1px solid #eeeeee; */
 }
+
+.portfolio-contents li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolioliborders {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
 /* End portfolio items*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.social-media-icon {
+  width: 44px;
+  height: 44px;
+  padding-top: 0;
+
+  /*   display: block; */
+  /*   stroke-width: 0; */
+  /* align-self: center; */
+  /* 
+  stroke: var(--brand-grey); */
+  fill: var(--brand-grey);
+  border-radius: 22px;
+  background-color: var(--brand-white);
+}
+
+.social-media-icon:hover {
+  fill: var(--brand-white);
+  background-color: var(--brand-blue);
+}
+
+.social-media {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.ourcustomers {
+  display: flex;
+  gap: 30px;
+}
+
+.customerlogo {
+  width: 170px;
+  height: 92px;
+  padding: 22px; /* tymczasowo */
+
+  fill: var(--customer-logo);
+  border: 1px solid var(--customer-logo);
+  border-radius: 4px;
+}
+
+.customerlogo:hover {
+  fill: var(--brand-blue);
+  border: 1px solid var(--brand-blue);
+}
+
 footer {
   background-color: var(--brand-background);
   padding-top: 60px;
@@ -355,29 +431,30 @@ footer a:hover,
 footer a:focus {
   color: var(--brand-blue);
 }
+footer h4 {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-white);
+}
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+.flex-footer {
+  display: flex;
+  gap: 70px;
+}
+
+.social-media-footer {
+  width: 44px;
+  height: 44px;
   padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  /*   display: block; */
+  /*   stroke-width: 0; */
+  /* align-self: center; */
+  /* 
+  stroke: var(--brand-grey); */
+  fill: rgba(255, 255, 255, 0.1);
 }
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* .flex-mainh {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
