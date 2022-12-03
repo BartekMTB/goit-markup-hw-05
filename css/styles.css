@@ -440,6 +440,7 @@ footer h4 {
   fill: var(--brand-white);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-media-footer:hover {
+.social-media-footer:hover,
+.social-media-footer:focus {
   background-color: var(--brand-blue);
 }
