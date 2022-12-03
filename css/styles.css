@@ -110,10 +110,9 @@ header svg {
   padding: 0;
   margin-right: 10px;
   display: block;
-  /*   stroke-width: 0; */
+
   align-self: center;
-  /* 
-  stroke: var(--brand-grey); */
+
   fill: var(--brand-grey);
 }
 
@@ -153,16 +152,15 @@ header {
   background: var(--brand-background);
   padding: 200px 0;
   text-align: center;
-
+  background-size: 1600px 600px cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
   background-image: linear-gradient(
       to bottom,
       var(--gradient-mainbackground),
       var(--gradient-mainbackground)
     ),
     url(/images/background.jpg);
-  background-size: 1600px 600px cover;
-  background-repeat: no-repeat;
-  background-position: center -125px;
 }
 
 .mainheader h1 {
@@ -362,6 +360,7 @@ h2 {
 }
 
 .social-media-icon {
+  cursor: pointer;
   fill: var(--brand-grey);
   border-radius: 22px;
   background-color: var(--brand-white);
@@ -385,7 +384,7 @@ h2 {
 
 .customerlogo {
   padding: 22px; /* tymczasowo */
-
+  cursor: pointer;
   fill: var(--customer-logo);
   border: 1px solid var(--customer-logo);
   border-radius: 4px;
@@ -435,6 +434,7 @@ footer h4 {
 }
 
 .social-media-footer {
+  cursor: pointer;
   border-radius: 22px;
   padding: 0;
   fill: var(--brand-white);
