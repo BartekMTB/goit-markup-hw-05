@@ -202,8 +202,7 @@ header {
 }
 .ourperks-icons {
   padding: 25px;
-  width: 270px;
-  height: 120px;
+
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -363,15 +362,6 @@ h2 {
 }
 
 .social-media-icon {
-  width: 44px;
-  height: 44px;
-  padding-top: 0;
-
-  /*   display: block; */
-  /*   stroke-width: 0; */
-  /* align-self: center; */
-  /* 
-  stroke: var(--brand-grey); */
   fill: var(--brand-grey);
   border-radius: 22px;
   background-color: var(--brand-white);
@@ -394,8 +384,6 @@ h2 {
 }
 
 .customerlogo {
-  width: 170px;
-  height: 92px;
   padding: 22px; /* tymczasowo */
 
   fill: var(--customer-logo);
@@ -447,14 +435,11 @@ footer h4 {
 }
 
 .social-media-footer {
-  width: 44px;
-  height: 44px;
+  border-radius: 22px;
   padding: 0;
-
-  /*   display: block; */
-  /*   stroke-width: 0; */
-  /* align-self: center; */
-  /* 
-  stroke: var(--brand-grey); */
-  fill: rgba(255, 255, 255, 0.1);
+  fill: var(--brand-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-media-footer:hover {
+  background-color: var(--brand-blue);
 }
