@@ -107,12 +107,9 @@ header div > a {
 }
 
 header svg {
-  padding: 0;
   margin-right: 10px;
   display: block;
-
   align-self: center;
-
   fill: var(--brand-grey);
 }
 
@@ -129,14 +126,15 @@ header svg {
   display: flex;
 }
 
-.flex-head-icons:hover svg {
-  fill: var(--brand-blue);
-}
-
 header a:hover,
 header a:focus,
 .a-current {
   color: var(--brand-blue);
+}
+
+header a:hover svg,
+header a:focus svg {
+  fill: var(--brand-blue);
 }
 
 header {
@@ -300,7 +298,7 @@ h2 {
 }
 
 .portfolio-buttons button:hover,
-.portfolio-buttons button :focus {
+.portfolio-buttons button:focus {
   background-color: var(--brand-blue);
   color: var(--brand-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -366,7 +364,8 @@ h2 {
   background-color: var(--brand-white);
 }
 
-.social-media-icon:hover {
+.social-media a:hover .social-media-icon,
+.social-media a:focus .social-media-icon {
   fill: var(--brand-white);
   background-color: var(--brand-blue);
 }
@@ -418,6 +417,11 @@ footer a:hover,
 footer a:focus {
   color: var(--brand-blue);
 }
+
+footer a:hover .social-media-footer,
+footer a:focus .social-media-footer {
+  background-color: var(--brand-blue);
+}
 footer h4 {
   margin-top: 12px;
   font-weight: 700;
@@ -433,14 +437,15 @@ footer h4 {
   gap: 70px;
 }
 
+.social-mediaf {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
 .social-media-footer {
   cursor: pointer;
   border-radius: 22px;
-  padding: 0;
   fill: var(--brand-white);
   background-color: rgba(255, 255, 255, 0.1);
-}
-.social-media-footer:hover,
-.social-media-footer:focus {
-  background-color: var(--brand-blue);
 }
