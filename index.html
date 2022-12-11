@@ -57,7 +57,10 @@
       <section class="mainheader">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button">Zamów usługe</button>
+          <button data-modal-open type="button">Zamów usługe</button>
+          <div class="modal is-hidden" data-modal>
+            <button data-modal-close>close</button>
+          </div>
         </div>
       </section>
 
@@ -418,5 +421,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
